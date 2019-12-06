@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Habr-Dark-Theme
 @namespace	github.com/Mef45/habr-dark-theme
-@version	0.1.1
+@version	0.2.0
 @description	Dark theme for habr.com
 @author		mef45 <mefka45@yandex.ru> (https://github.com/Mef45)
 @homepageURL	https://github.com/Mef45/habr-dark-theme
@@ -11,128 +11,218 @@
 ==/UserStyle== */
 
 @-moz-document domain("habr.com") {
-div.layout {
-    background: #1b1b1b !important;
-}
+	div.layout {
+	    background: #1b1b1b !important;
+	}
 
-#TMpanel,
-div.layout__row_navbar {
-    background: #000 !important;
-    border-bottom: 1px solid #000 !important;
-}
+	#TMpanel,
+	div.layout__row_navbar {
+	    background: #000 !important;
+	    border-bottom: 1px solid #000 !important;
+	}
 
-.icon-svg_logo-habrahabr {
-    color: #bfbfbf !important;
-}
+	.icon-svg_logo-habrahabr {
+	    color: #bfbfbf !important;
+	}
 
-.nav-links__item {
-    height: 70% !important;
-    margin-right: 10px !important;
-}
+	.nav-links__item {
+	    height: 70% !important;
+	    margin-right: 10px !important;
+	}
 
-.nav-links__item-link {
-    color: #bfbfbf !important;
-    padding: 0 10px !important;
-}
+	.nav-links__item-link {
+	    color: #bfbfbf !important;
+	    padding: 0 10px !important;
+	}
 
-.nav-links__item-link:hover,
-.nav-links__item-link_current {
-    background: #fef7cf !important;
-    color: #000 !important;
-    border-radius: 5px !important;
-    padding: 0 10px !important;
-}
+	.nav-links__item-link:hover,
+	.nav-links__item-link_current {
+	    background: #fef7cf !important;
+	    color: #000 !important;
+	    border-radius: 5px !important;
+	    padding: 0 10px !important;
+	}
 
-.default-block,
-.btn_flow-toggle:active,
-.btn_flow-toggle.btn_active,
-.dropdown_active .dropdown-container,
-.n-dropdown-menu,
-/* Блок "ИНФОРМАЦИЯ О КОМПАНИИ" */
-.company-info_post-additional,
-.company-info__author,
-/* Блок "ПОДЕЛИТЬСЯ ПУБЛИКАЦИЕЙ" */
-.post-share,
-.post__text-html blockquote,
-.post__text-html pre code {
-    background: #292929 !important;
-    border: none !important;
-}
+	.default-block,
+	.btn_flow-toggle:active,
+	.btn_flow-toggle.btn_active,
+	.dropdown_active .dropdown-container,
+	.n-dropdown-menu,
+	/* Блок "ИНФОРМАЦИЯ О КОМПАНИИ" */
+	.company-info_post-additional,
+	.company-info__author,
+	/* Блок "ПОДЕЛИТЬСЯ ПУБЛИКАЦИЕЙ" */
+	.post-share,
+	.post__text-html blockquote,
+	.post__text-html pre code {
+	    background: #292929 !important;
+	    border: none !important;
+	}
 
-.stacked-menu__item-link,
-.companies-rating__name,
-.btn_flow-toggle,
-.tabs-menu__item-text,
-.post__title_link,
-.post__text-html,
-.news-topic__title,
-.n-dropdown-menu__item-link_flow,
-.news-block__title,
-.comment__message,
-.comment-form__preview,
-.page-header__info-title,
-.page-header__info-desc,
-.post__title-text,
-.user-info__fullname,
-.user-info__specialization,
-/* Блок "ИНФОРМАЦИЯ" */
-.defination-list__label,
-.defination-list__value,
-/* Блок "ССЫЛКИ" */
-.company-links__title,
-/* Блок "ТВИТТЕР" */
-.company-tweet__username,
-.company-tweet__text,
-/* Блок "БЛОГ НА ХАБРЕ" */
-.default-block__header-title,
-.post-info__title,
-/* Блок "ПОДЕЛИТЬСЯ ПУБЛИКАЦИЕЙ"/"ПОХОЖИЕ ПУБЛИКАЦИИ" */
-.post-share__title {
-    color: #bfbfbf !important;
-}
+	.stacked-menu__item-link,
+	.companies-rating__name,
+	.btn_flow-toggle,
+	.tabs-menu__item-text,
+	.post__title_link,
+	.post__text-html,
+	.news-topic__title,
+	.n-dropdown-menu__item-link_flow,
+	.news-block__title,
+	.comment__message,
+	.comment-form__preview,
+	.page-header__info-title,
+	.page-header__info-desc,
+	.post__title-text,
+	.user-info__fullname,
+	.user-info__specialization,
+	/* Блок "ИНФОРМАЦИЯ" */
+	.defination-list__label,
+	.defination-list__value,
+	/* Блок "ССЫЛКИ" */
+	.company-links__title,
+	/* Блок "ТВИТТЕР" */
+	.company-tweet__username,
+	.company-tweet__text,
+	/* Блок "БЛОГ НА ХАБРЕ" */
+	.default-block__header-title,
+	.post-info__title,
+	/* Блок "ПОДЕЛИТЬСЯ ПУБЛИКАЦИЕЙ"/"ПОХОЖИЕ ПУБЛИКАЦИИ" */
+	.post-share__title {
+	    color: #bfbfbf !important;
+	}
 
-.btn_outline_blue,
-.post-stats {
-    color: #818181 !important;
-    border-color: #818181 !important;
-}
+	.btn_outline_blue,
+	.post-stats {
+	    color: #818181 !important;
+	    border-color: #818181 !important;
+	}
 
-.btn_outline_blue:hover {
-    background: none !important;
-}
+	.btn_outline_blue:hover {
+	    background: none !important;
+	}
 
-.btn_navbar_search:hover,
-.btn_navbar_tracker:hover,
-.stacked-menu__item-link:hover .stacked-menu__item-text,
-.stacked-menu__item-counter,
-.btn_navbar_write-topic,
-.companies-rating__name:hover,
-.post-info__title:hover,
-.post-info__title-link:hover,
-.tabs-menu__item-text_active,
-.active .tabs-menu__item-text,
-.tabs-menu__item_link:hover .tabs-menu__item-text,
-.tabs-menu__item-counter_new,
-.news-topic__title:hover,
-.post__title_link:hover,
-.page-header__stats-value,
-/* Блок "ССЫЛКИ" */
-.company-links__title:link:hover {
-    color: #fef7cf !important;
-}
+	.btn_navbar_search:hover,
+	.btn_navbar_tracker:hover,
+	.stacked-menu__item-link:hover .stacked-menu__item-text,
+	.stacked-menu__item-counter,
+	.btn_navbar_write-topic,
+	.companies-rating__name:hover,
+	.post-info__title:hover,
+	.post-info__title-link:hover,
+	.tabs-menu__item-text_active,
+	.active .tabs-menu__item-text,
+	.tabs-menu__item_link:hover .tabs-menu__item-text,
+	.tabs-menu__item-counter_new,
+	.news-topic__title:hover,
+	.post__title_link:hover,
+	.page-header__stats-value,
+	/* Блок "ССЫЛКИ" */
+	.company-links__title:link:hover {
+	    color: #fef7cf !important;
+	}
 
-.tabs-menu__item-text_active,
-.active .tabs-menu__item-text {
-    border-color: #fef7cf !important;
-}
+	.tabs-menu__item-text_active,
+	.active .tabs-menu__item-text {
+	    border-color: #fef7cf !important;
+	}
 
-.btn_navbar_write-topic {
-    border: 1px solid #fef7cf !important;
-}
+	.btn_navbar_write-topic {
+	    border: 1px solid #fef7cf !important;
+	}
 
-.btn_navbar_write-topic:hover,
-.n-dropdown-menu__item-link_flow:hover {
-    color: #000 !important;
-    background-color: #fef7cf !important;
-}
+	.btn_navbar_write-topic:hover,
+	.n-dropdown-menu__item-link_flow:hover {
+	    color: #000 !important;
+	    background-color: #fef7cf !important;
+	}
+
+	/*
+	Monokai style - ported by Luigi Maselli - http://grigio.org
+	*/
+
+	.hljs {
+	  display: block;
+	  overflow-x: auto;
+	  padding: 0.5em;
+	  background: #272822;
+	  color: #ddd;
+	}
+
+	.hljs-tag,
+	.hljs-keyword,
+	.hljs-selector-tag,
+	.hljs-literal,
+	.hljs-strong,
+	.hljs-name {
+	  color: #f92672;
+	}
+
+	.hljs-code {
+	  color: #66d9ef;
+	}
+
+	.hljs-class .hljs-title {
+	  color: white;
+	}
+
+	.hljs-attribute,
+	.hljs-symbol,
+	.hljs-regexp,
+	.hljs-link {
+	  color: #bf79db;
+	}
+
+	.hljs-string,
+	.hljs-bullet,
+	.hljs-subst,
+	.hljs-title,
+	.hljs-section,
+	.hljs-emphasis,
+	.hljs-type,
+	.hljs-built_in,
+	.hljs-builtin-name,
+	.hljs-selector-attr,
+	.hljs-selector-pseudo,
+	.hljs-addition,
+	.hljs-variable,
+	.hljs-template-tag,
+	.hljs-template-variable {
+	  color: #a6e22e;
+	}
+
+	.hljs-comment,
+	.hljs-quote,
+	.hljs-deletion,
+	.hljs-meta {
+	  color: #75715e;
+	}
+
+	.hljs-bullet,
+	.hljs-quote,
+	.hljs-number,
+	.hljs-regexp,
+	.hljs-literal,
+	.hljs-link {
+	  color: #ae81ff;
+	}
+
+	.hljs-bullet,
+	.hljs-quote,
+	.hljs-number,
+	.hljs-regexp,
+	.hljs-literal,
+	.hljs-link {
+	  color: #ae81ff;
+	}
+
+	.hljs-keyword,
+	.hljs-selector-tag,
+	.hljs-literal,
+	.hljs-doctag,
+	.hljs-title,
+	.hljs-section,
+	.hljs-type,
+	.hljs-selector-id {
+	  font-weight: bold;
+	}
 }
