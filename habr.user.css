@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Habr-Dark-Theme
 @namespace	github.com/Mef45/habr-dark-theme
-@version	0.2.2
+@version	0.2.3
 @description	Dark theme for habr.com
 @author		mef45 <mefka45@yandex.ru> (https://github.com/Mef45)
 @homepageURL	https://github.com/Mef45/habr-dark-theme
@@ -141,6 +141,10 @@
 	.n-dropdown-menu__item-link_flow:hover {
 	    color: #000 !important;
 	    background-color: #fef7cf !important;
+	}
+
+	.n-dropdown-menu__item-link {
+		color: #bfbfbf;
 	}
 
 	/*
