@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Habr-Dark-Theme
 @namespace	github.com/Mef45/habr-dark-theme
-@version	0.2.5
+@version	0.3.0
 @description	Dark theme for habr.com
 @author		mef45 <mefka45@yandex.ru> (https://github.com/Mef45)
 @homepageURL	https://github.com/Mef45/habr-dark-theme
@@ -11,18 +11,28 @@
 ==/UserStyle== */
 
 @-moz-document domain("habr.com") {
+	:root {
+		--bg-color-main: #1b1b1b;
+		--bg-color-0: #292929;
+		--bg-color-1: #000000;
+		--bg-color-2: #fef7cf;
+
+		--font-color-main: #bfbfbf;
+		--font-color-0: #fef7cf;
+	}
+
 	div.layout {
-	    background: #1b1b1b !important;
+	    background: var(--bg-color-main) !important;
 	}
 
 	#TMpanel,
 	div.layout__row_navbar {
-	    background: #000 !important;
-	    border-bottom: 1px solid #000 !important;
+	    background: var(--bg-color-1) !important;
+	    border-bottom: 1px solid var(--bg-color-1) !important;
 	}
 
 	.icon-svg_logo-habrahabr {
-	    color: #bfbfbf !important;
+	    color: var(--font-color-main) !important;
 	}
 
 	.nav-links__item {
@@ -31,14 +41,14 @@
 	}
 
 	.nav-links__item-link {
-	    color: #bfbfbf !important;
+	    color: var(--font-color-main) !important;
 	    padding: 0 10px !important;
 	}
 
 	.nav-links__item-link:hover,
 	.nav-links__item-link_current {
-	    background: #fef7cf !important;
-	    color: #000 !important;
+	    background: var(--bg-color-2) !important;
+	    color: var(--bg-color-1) !important;
 	    border-radius: 5px !important;
 	    padding: 0 10px !important;
 	}
@@ -48,18 +58,15 @@
 	.btn_flow-toggle.btn_active,
 	.dropdown_active .dropdown-container,
 	.n-dropdown-menu,
-	/* Блок "О Переводе" */
 	.post__translatation,
-	/* Блок "ИНФОРМАЦИЯ О КОМПАНИИ" */
 	.company-info_post-additional,
 	.company-info__author,
-	/* Блок "ПОДЕЛИТЬСЯ ПУБЛИКАЦИЕЙ" */
 	.post-share,
 	.post__text-html blockquote,
 	.post__text-html pre code,
 	.comment__message pre code,
 	.comment-form__preview pre code {
-	    background: #292929 !important;
+	    background: var(--bg-color-0) !important;
 	    border: none !important;
 	}
 
@@ -79,26 +86,21 @@
 	.post__title-text,
 	.user-info__fullname,
 	.user-info__specialization,
-	/* Блок "ИНФОРМАЦИЯ" */
 	.defination-list__label,
 	.defination-list__value,
-	/* Блок "ССЫЛКИ" */
 	.company-links__title,
-	/* Блок "ТВИТТЕР" */
 	.company-tweet__username,
 	.company-tweet__text,
-	/* Блок "БЛОГ НА ХАБРЕ" */
 	.default-block__header-title,
 	.post-info__title,
-	/* Блок "ПОДЕЛИТЬСЯ ПУБЛИКАЦИЕЙ"/"ПОХОЖИЕ ПУБЛИКАЦИИ" */
 	.post-share__title,
 	.post__translatation-link {
-	    color: #bfbfbf !important;
+	    color: var(--font-color-main) !important;
 	}
 
 	.default-block__polling-title,
 	.poll-result__data-label {
-		color: #bfbfbf;
+		color: var(--font-color-main);
 	}
 
 	.btn_outline_blue,
@@ -126,39 +128,38 @@
 	.news-topic__title:hover,
 	.post__title_link:hover,
 	.page-header__stats-value,
-	/* Блок "ССЫЛКИ" */
 	.company-links__title:link:hover {
-	    color: #fef7cf !important;
+	    color: var(--font-color-0) !important;
 	}
 
 	.tabs-menu__item-text_active,
 	.active .tabs-menu__item-text {
-	    border-color: #fef7cf !important;
+	    border-color: var(--font-color-0) !important;
 	}
 
 	.btn_navbar_write-topic {
-	    border: 1px solid #fef7cf !important;
+	    border: 1px solid var(--font-color-0) !important;
 	}
 
 	.btn_navbar_write-topic:hover,
 	.n-dropdown-menu__item-link_flow:hover {
-	    color: #000 !important;
-	    background-color: #fef7cf !important;
+	    color: var(--bg-color-1) !important;
+	    background-color: var(--font-color-0) !important;
 	}
 
 	.n-dropdown-menu__item-link {
-		color: #bfbfbf;
+		color: var(--font-color-main);
 	}
 
 	.n-dropdown-menu__item-link:hover {
-	    background: #fef7cf;
-	    color: #000;
+	    background: var(--bg-color-2);
+	    color: var(--bg-color-1);
 	}
 
 	/*
-	Monokai style - ported by Luigi Maselli - http://grigio.org
+    HLJS Colors
+	  Monokai style - ported by Luigi Maselli - http://grigio.org
 	*/
-
 	.hljs {
 	  display: block;
 	  overflow-x: auto;
