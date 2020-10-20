@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Habr-Dark-Theme
 @namespace	github.com/Mef45/habr-dark-theme
-@version	0.3.2
+@version	0.3.3
 @description	Dark theme for habr.com
 @author		mef45 <mefka45@yandex.ru> (https://github.com/Mef45)
 @homepageURL	https://github.com/Mef45/habr-dark-theme
@@ -19,6 +19,7 @@
 
 		--font-color-main: #bfbfbf;
 		--font-color-0: #fef7cf;
+		--font-color-hover: #4da0da;
 	}
 
 	div.layout {
@@ -151,6 +152,10 @@
 		border: none !important;
 		font-weight: bold !important;
 		color: var(--font-color-main) !important;
+	}
+
+	.btn_navbar_login:hover {
+		color: var(--font-color-hover);
 	}
 
 	.n-dropdown-menu__item-link {
