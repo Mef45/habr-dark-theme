@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Habr-Dark-Theme
 @namespace	github.com/Mef45/habr-dark-theme
-@version	0.2.4
+@version	0.2.5
 @description	Dark theme for habr.com
 @author		mef45 <mefka45@yandex.ru> (https://github.com/Mef45)
 @homepageURL	https://github.com/Mef45/habr-dark-theme
@@ -48,6 +48,8 @@
 	.btn_flow-toggle.btn_active,
 	.dropdown_active .dropdown-container,
 	.n-dropdown-menu,
+	/* Блок "О Переводе" */
+	.post__translatation,
 	/* Блок "ИНФОРМАЦИЯ О КОМПАНИИ" */
 	.company-info_post-additional,
 	.company-info__author,
@@ -89,7 +91,8 @@
 	.default-block__header-title,
 	.post-info__title,
 	/* Блок "ПОДЕЛИТЬСЯ ПУБЛИКАЦИЕЙ"/"ПОХОЖИЕ ПУБЛИКАЦИИ" */
-	.post-share__title {
+	.post-share__title,
+	.post__translatation-link {
 	    color: #bfbfbf !important;
 	}
 
