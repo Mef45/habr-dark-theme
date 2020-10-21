@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Habr-Dark-Theme
 @namespace	github.com/Mef45/habr-dark-theme
-@version	0.3.5
+@version	0.3.6
 @description	Dark theme for habr.com
 @author		mef45 <mefka45@yandex.ru> (https://github.com/Mef45)
 @homepageURL	https://github.com/Mef45/habr-dark-theme
@@ -65,6 +65,7 @@
 	.post-share,
 	.post__text-html blockquote,
 	.post__text-html pre code,
+  .post__text_v2 pre code,
 	.comment__message pre code,
 	.comment-form__preview pre code {
 	    background: var(--bg-color-0) !important;
