@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name		Habr-Dark-Theme
 @namespace	github.com/Mef45/habr-dark-theme
-@version	0.3.4
+@version	0.3.5
 @description	Dark theme for habr.com
 @author		mef45 <mefka45@yandex.ru> (https://github.com/Mef45)
 @homepageURL	https://github.com/Mef45/habr-dark-theme
@@ -76,6 +76,7 @@
 	.btn_flow-toggle,
 	.tabs-menu__item-text,
 	.post__title_link,
+  .post__text,
 	.post__text-html,
 	.news-topic__title,
 	.n-dropdown-menu__item-link_flow,
